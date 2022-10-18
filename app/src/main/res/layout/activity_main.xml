@@ -16,7 +16,54 @@
         android:layout_centerHorizontal="true"
         tools:srcCompat="@tools:sample/avatars" />
 
-
+    <TextView
+        android:id="@+id/title1"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Przezroczystość"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <SeekBar
+        android:layout_marginTop="10dp"
+        android:id="@+id/slider1"
+        android:layout_below="@id/title1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/title2"
+        android:layout_below="@id/slider1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Filtry"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/redBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title2"
+        android:layout_marginLeft="75dp"
+        android:background="@color/red"/>
+    <CheckBox
+        android:id="@+id/greenBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redBox"
+        android:layout_marginLeft="75dp"
+        android:background="@color/green"
+        />
+    <CheckBox
+        android:id="@+id/blueBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greenBox"
+        android:layout_marginLeft="75dp"
+        android:background="@color/blue"/>
 
 
 </RelativeLayout>
