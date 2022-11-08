@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -89,5 +90,9 @@ public class MainActivity extends AppCompatActivity {
     public void ZmianaKoloru(int RValueInt, int GValueInt, int BValueInt) {
         TextView text = findViewById(R.id.color);
         text.setBackgroundColor(Color.rgb(RValueInt, GValueInt, BValueInt));
+    }
+
+    public void rotateRight(View view) {
+        image.animate().rotation(90).start();
     }
 }
