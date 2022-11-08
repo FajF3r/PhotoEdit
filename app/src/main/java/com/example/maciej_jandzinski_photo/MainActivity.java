@@ -13,7 +13,7 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
-    SeekBar sliderR, sliderG, sliderB;
+    SeekBar sliderR, sliderG, sliderB, sliderAlpha;
     ImageView image;
     TextView color;
     final int[] RValueInt = {0};
@@ -25,10 +25,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        sliderAlpha = findViewById(R.id.sliderAlpha);
         image = findViewById(R.id.imageView);
         sliderR = findViewById(R.id.sliderRed);
         sliderG = findViewById(R.id.sliderGreen);
         sliderB = findViewById(R.id.sliderBlue);
+
+        sliderAlpha.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
 
         sliderR.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -93,6 +111,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void rotateRight(View view) {
-        image.animate().rotation(90).start();
+        image.setRotation(image.getRotation() + 90);
     }
 }
