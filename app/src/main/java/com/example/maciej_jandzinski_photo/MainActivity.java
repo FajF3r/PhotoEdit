@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         sliderAlpha.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-
+                image.setImageAlpha(i * 25);
             }
 
             @Override
