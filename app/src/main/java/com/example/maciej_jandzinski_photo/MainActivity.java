@@ -113,4 +113,16 @@ public class MainActivity extends AppCompatActivity {
     public void rotateRight(View view) {
         image.setRotation(image.getRotation() + 90);
     }
+
+    public void rotateLeft(View view) {
+        image.setRotation(image.getRotation() - 90);
+    }
+
+    public void rotateUp(View view) {
+        image.setRotation(image.getRotation() + 180);
+    }
+
+    public void rotateDown(View view) {
+        image.setRotation(image.getRotation() - 180);
+    }
 }

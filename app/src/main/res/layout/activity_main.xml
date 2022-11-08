@@ -97,6 +97,7 @@
         android:progress="0"/>
 
     <Button
+        android:onClick="rotateUp"
         android:id="@+id/butTop"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -108,6 +109,7 @@
         android:textSize="20dp" />
 
     <Button
+        android:onClick="rotateDown"
         android:id="@+id/butBottom"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -130,6 +132,7 @@
         android:textSize="20dp" />
 
     <Button
+        android:onClick="rotateLeft"
         android:id="@+id/butLeft"
         android:layout_width="50dp"
         android:layout_height="50dp"
