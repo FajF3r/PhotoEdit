@@ -66,6 +66,25 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        sliderB.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                int x = i;
+                BValueInt[0] = x;
+                ZmianaKoloru(RValueInt[0], GValueInt[0], BValueInt[0]);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
     }
     public void ZmianaKoloru(int RValueInt, int GValueInt, int BValueInt) {
         TextView text = findViewById(R.id.color);
